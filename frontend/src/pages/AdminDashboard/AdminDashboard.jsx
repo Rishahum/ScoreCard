@@ -100,13 +100,13 @@ export default function AdminDashboard({ user, onLogout }) {
           </div>
           <div className="header-actions">
             <input type="file" accept=".xlsx,.xls" ref={fileRef} onChange={handleExcel} hidden />
-            <button
+            {/* <button
               className="btn-secondary"
               onClick={() => fileRef.current.click()}
               disabled={uploading}
             >
               {uploading ? '⏳ Processing…' : '📤 Import from Excel'}
-            </button>
+            </button> */}
             <button className="btn-primary" onClick={() => setShowAddForm(true)}>
               + Add Candidate
             </button>

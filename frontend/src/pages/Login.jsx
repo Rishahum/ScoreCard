@@ -50,10 +50,13 @@ export default function Login({ onLogin }) {
               required
             />
           </div>
+          <div style={{marginTop: "10px"}}>
           {error && <div className="alert alert-error">{error}</div>}
-          <button className="btn-primary full-width" type="submit" disabled={loading}>
+          <button className="btn-primary full-width" type="submit" disabled={loading}  >
             {loading ? 'Signing in…' : 'Sign In'}
           </button>
+          </div>
+          
         </form>
 
       </div>
